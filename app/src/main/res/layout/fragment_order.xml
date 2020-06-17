@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/plante3"
+    >
+
+
+<LinearLayout
+    android:layout_marginTop="200dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/ll1">
+
+    <EditText
+        android:id="@+id/pesticidedelay"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        android:background="@drawable/et_style"
+        android:drawablePadding="10dp"
+android:inputType="number"
+        android:fontFamily="sans-serif-light"
+        android:hint="Delay pesticide"
+        android:padding="10dp"
+        android:textColor="#6B8E23"
+        app:layout_constraintEnd_toStartOf="@+id/pesticide"
+
+        />
+
+    <Button
+        android:id="@+id/pesticide"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        android:text="OFF"
+
+
+        ></Button>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll2" android:layout_below="@+id/ll1">
+
+        <EditText
+            android:id="@+id/soleildelay"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginEnd="72dp"
+
+            android:background="@drawable/et_style"
+            android:inputType="number"
+            android:drawablePadding="10dp"
+            android:fontFamily="sans-serif-light"
+            android:hint="Delay Soleil"
+            android:padding="10dp"
+            android:textColor="#6B8E23"
+
+
+            />
+    <Button
+        android:id="@+id/soleil"
+
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        android:text="OFF"></Button>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll3"
+        android:layout_below="@+id/ll2">
+
+
+        <EditText
+            android:id="@+id/arrocagedelay"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginEnd="72dp"
+            android:inputType="number"
+            android:background="@drawable/et_style"
+            android:drawablePadding="10dp"
+            android:fontFamily="sans-serif-light"
+            android:hint="Delay Arrocage"
+            android:padding="10dp"
+            android:textColor="#6B8E23" />
+        <Button
+            android:id="@+id/arrocage"
+
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            android:text="OFF"></Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll4" android:layout_below="@+id/ll3">
+
+
+        <EditText
+            android:id="@+id/parapluiedelay"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginEnd="60dp"
+            android:inputType="number"
+            android:background="@drawable/et_style"
+            android:drawablePadding="10dp"
+            android:fontFamily="sans-serif-light"
+            android:hint="Delay Ombre"
+            android:padding="10dp"
+            android:textColor="#6B8E23" />
+        <Button
+            android:id="@+id/ombre"
+
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            android:text="OFF"></Button>
+    </LinearLayout>
+</RelativeLayout>
